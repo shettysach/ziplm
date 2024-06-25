@@ -1,0 +1,13 @@
+[package]
+name = "ziplm"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+flate2 = "1.0.28"
+ndarray = "0.15.6"
+weighted_rand = "0.4.2"
+clap = { version = "4.5.2", features = ["derive"], optional = true }
+
+[features]
+cli = ["dep:clap"]
